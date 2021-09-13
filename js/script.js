@@ -1,12 +1,13 @@
+/*SCRIPT DO SLIDER*/
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+/*Controle de "ir" e "voltar"*/
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+/*Controle de Thumbnail image*/
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
