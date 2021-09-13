@@ -219,3 +219,42 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+.newsletter-container {
+  min-height: 170px;
+  background-color: #F2F2F2;
+}
+
+#title-newsletter {
+  padding-top: 30px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.card-container {
+  margin-left: 320px;
+}
+
+.newsletter-input {
+  height: 48px;
+  width: 280px;
+  border: none;
+  align-items: center;
+  border-radius: 7px;
+  margin: 15px 3px;
+  padding: 5px;
+  padding-left: 20px;
+  outline: none;
+}
+
+.newsletter-menu{
+  background:#E9BF33; 
+  border: 0px;  
+  height: 55px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  width: 140px;
+  border-radius: 7px;
+}

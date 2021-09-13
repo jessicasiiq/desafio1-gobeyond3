@@ -111,4 +111,24 @@
 <!--Incluindo o Javascript ao HTML, optei por deixá-lo aqui assim garantimos que todo o corpo do HTML carregará antes dele ser chamado-->
 <script type="text/javascript" src="js/script.js"></script>
 
+<section></section>
+
+<!--Section da newsletter-->
+<section class="newsletter-container">
+    <!--Utilizei um <p> para colocar o "título" da newsletter-->
+    <p id="title-newsletter">Participe de nossas news com promoções e novidades!</p>
+    <!--Criei um container apenas para o card da newsletter, assim consegui mais facilmente posicionar os inputs e botão-->
+    <div class="card-container">
+        <div id="content">
+        <!--Uma newsletter é um formulário(form), o gatilho do "check_form" foi configurado no js, verificar linha ""-->
+            <form id="newsletter-form" onsubmit="return check_form()">
+                <!--Coloquei "required" como atributo de cada input pois isso obriga com que o campo seja preenchido para ocorrer o evento-->
+                <input type="text" class="newsletter-input" placeholder="Digite seu nome" id="name" required>
+                <input type="text" class="newsletter-input" placeholder="Digite seu email" id="email" required>
+                <input type="submit" class="newsletter-menu" value="Eu quero!">
+            </form>
+        </div>
+    </div>
+</section>
+
 </html>
