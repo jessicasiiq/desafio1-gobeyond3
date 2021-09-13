@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!--Apresentação de caracteres especiais do idioma-->
+    <meta charset="UTF-8">
+    <!--Produção do site por: -->
+    <meta name="author" content="Jéssica da Silva Siqueira" />
+    <!--Meta tag para a responsividade-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Conectando o arquivo de estilo ao HTML-->
+    <link rel="stylesheet" type="text/CSS" href="css/style.css" />
+    <!--Título da Página-->
+    <title>Página para exercício HTML + CSS || Go Beyond • Corebiz</title>
+</head>
+
+<!--A abertura do body já recebe a indicação para não apresentar a barra de rolagem horizontal-->
+<body style="overflow-x: hidden">
+    <!--Início do header da página-->
+    <header>
+        <!--Colocando o logo do site na página, com um atributo "alt" para leitores de tela ou quebra da imagem-->
+        <img id="banner-site" src="assets/image/header/gobeyond_logo_white 1.png" alt="Logo do site Corebiz - Go Beyond"
+            title="Corebiz Go Beyond" />
+        <!--Início do container dos links e caixa de pesquisa do header-->
+        <nav id="navbarMenuHeader">
+            <!--A melhor opção que eu consegui colocar em prática para um menu dropdown foi em forma de tópicos/lista. <li>s são os itens principais, ou seja, aqueles que aparecerão diretamente na tab-bar(sem necessidade de interação) e <li>s dentro de <ul>s são os sub-itens que aparecerão conforme interação do usuário com os itens principais.-->
+            <ul id="itemMenu">
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li>
+                    <a href="/">Categoria 1 ▼</a>
+                    <ul>
+                        <li><a href="/">Página 1</a></li>
+                        <li><a href="/">Página 2</a></li>
+                        <li><a href="/">Página 3</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Categoria 2 ▼</a>
+                    <ul>
+                        <li><a href="/">Página 1</a></li>
+                        <li><a href="/">Página 2</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/">Contato</a>
+                </li>
+
+                <!--Aqui tenho a declaração da caixa de pesquisa, logo em seguida adicionei uma imagem de lupa, onde, se o site fosse funcional, dispararia um evento em js para a busca das palavra-chaves-->
+                <input type="text" placeholder="O que está procurando?" id="searchInput">
+                <img src="assets/image/header/search.png" id="searchButton" alt="Buscar" />
+
+                <!--ícone + link/botão "Minha conta"-->
+                <img src="assets/image/header/user.png" id="userIcon" alt="Minha conta" />
+                <a href="/" id="myAccount">Minha conta</a>
+
+                <!--ícone ilustrando um carrinho de compra-->
+                <img src="assets/image/header/minicart.png" id="minicartIcon" alt="Carrinho de compra" />
+            </ul>
+        </nav>
+    </header>
+
+    <!--Criei uma section para fazer às vezes de um "bloco" no site, nesta sessão trabalharei apenas com o slider principal-->
+    <section class="section-slider">
+        <!--Aqui começa o slider-->
+        <div class="slideshow-container">
+            <!--Aqui temos a declaração das imagens que irão compor o slide, bem como os textos que terão sobreposição nestas. Os "sliderPhrase1" são frases com menos destaque (fonte menor e em cor branca), já os "sliderPhrase2" tem uma fonte maior e são coloridas em um tom amarelo-->
+            <!--SLIDE 1-->
+            <div class="mySlides fade">
+                <img src="assets/image/mainslider/image1.png" style="width:100%">
+                <div class="sliderPhrase1">Olá, você quer fazer entrar de cabeça em <br>desenvolvimento?</br></div>
+                <div class="sliderPhrase2">front-end • back-end • mobile</div>
+            </div>
+            <!--SLIDE 2-->
+            <div class="mySlides fade">
+                <img src="assets/image/mainslider/image2.png" style="width:100%">
+                <div class="sliderPhrase1">levamos um pouco da nossa<br>visão pelo mundo</br></div>
+                <div class="sliderPhrase2">we are global.</div>
+            </div>
+            <!--SLIDE 3-->
+            <div class="mySlides fade">
+                <img src="assets/image/mainslider/image3.png" style="width:100%">
+                <div class="sliderPhrase1">a maior empresa de experiência, <br>tecnologia e marketing para comércio</br>
+                </div>
+                <div class="sliderPhrase2">somos a corebiz.</div>
+            </div>
+            <!--SLIDE 4-->
+            <!--Coloquei um id no "sliderPhrase2" deste elemento filho do slider pois percebi que o texto dele estava com uma margem esteticamente estranha (textos diferentes = quantidade de carácteres diferentes = talvez uma class não consiga ajustar perfeitamente tudo para todas situações)-->
+            <div class="mySlides fade">
+                <img src="assets/image/mainslider/image4.png" style="width:100%">
+                <div class="sliderPhrase1">Estamos fisicamente em:</br></div>
+                <div class="sliderPhrase2" id="specific-phrase">Brasil • Argentina • México • <br>Chile</br></div>
+            </div>
+
+            <!--Aqui temos as definições dos botões de "voltar" e "ir" do slider-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!--Declaração das "bolinhas" do slider-->
+        <div id="slidersDots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+    </section>
+</body>
+
+<!--Incluindo o Javascript ao HTML, optei por deixá-lo aqui assim garantimos que todo o corpo do HTML carregará antes dele ser chamado-->
+<script type="text/javascript" src="js/script.js"></script>
+
+</html>

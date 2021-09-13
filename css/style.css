@@ -1,0 +1,221 @@
+/*Aqui estou importando uma fonte personalizada*/
+@font-face {
+  font-family: Nunito;
+  src: url(../assets/fonts/Nunito-Regular.ttf);
+ }
+
+/*Escolhi zerar o margin e padding de toda a página, bem como adicionar à ela a fonte personalizada Nunito que eu instalei logo acima*/
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Nunito";
+}
+
+/*---Posicionamento da logo---*/
+#banner-site {
+  margin: 25px 5%;
+  position: absolute;
+}
+
+/*---Estilização do menu do header principal da página---*/
+#navbarMenuHeader{
+  width: 100vw; /*Tamanho do container do meu menu*/
+  margin: 40px 18%; /*Posicionamento dele*/
+  position: absolute;
+  z-index: 1; /*Mexi no eixo Z dele pois quando acrescentei o slider percebi que os sub-itens do menu ficavam escondidos, porque as "camadas" do projeto respeitam a ordem que são adicionados, então com essa linha de código consegui manter o menu à frente*/
+}
+
+/*Estilização da lista do menu*/
+#itemMenu li {
+  list-style: none; /*Impede com que cada tópico tenha um sinal de lista, ex.: •*/
+}
+
+/*Estilização da lista do menu em todos estados sem interação momentânea*/
+#itemMenu li a, #itemMenu li a:link, itemMenu li a:visited {
+  color: #333333;
+  display: block;/*Linha necessária para que os sub-itens fiquem um abaixo do outro*/
+  font-size: 13px;
+  text-decoration: none;/*Linha para tirar o sublinhado dos links/itens do menu*/
+  padding: 0px 15px;
+}
+
+/*Estilização da lista do menu em todos estados com interação em paralelo*/
+#itemMenu li a:hover, #itemMenu li a:active {
+  margin: 0;
+  padding: 9px 15px;/*Aqui alterei o padding do eixo Y para dar o efeito de "crescimento" e "deslize" nos itens-pais*/
+  transition: ease-in 0.7s;/*Efeito de transição crescente, não deixa algo muito "abrupto"*/
+  background-color: #ededed;   
+}
+
+/*Estilização dos sub-itens do menu*/
+#itemMenu li li a, #itemMenu li li a:link, #itemMenu li li a:visited {
+  width: 150px;
+  font-size: 13px;
+  padding: 8px 15px;
+  border-bottom: 1px solid #fff;
+  background-color: #f1f1f3;
+}
+
+/*Estilização dos sub-itens do menu com hover (passar o mouse por cima). Enquanto os itens-pais tem um crescimento no eixo Y, os filhos tem uma diminuição do eixo X*/
+#itemMenu li li a:hover, #itemMenu li li a:active {
+  padding: 8px 10px;
+  background-color: #ededed;
+}
+
+/*Impede com que um item-pai fique abaixo do outro, bem como durante a transição, apenas o hover dê o leve efeito de "abaixar"*/
+#itemMenu li {
+  float: left;
+  padding: 0;
+}
+
+/*Aqui deixamos os sub-itens "guardados" dentro dos itens-pais*/
+#itemMenu li ul {
+  position: absolute;
+  left: -999em;
+  width: 170px;
+  padding: 0;
+}
+
+/*E aqui permitimos com que eles possam aparecer no hover dos pais*/
+#itemMenu li:hover ul, #itemMenu li li:hover ul, #itemMenu li li li:hover ul, #itemMenu li.sfhover ul, #itemMenu li li.sfhover ul, #itemMenu li li li.sfhover ul {
+  left: auto;
+}
+
+/*Estilização do input de busca*/
+#searchInput {
+  padding: 6px;
+  border: none;
+  border-bottom: 1px solid #7A7A7A;
+  font-size: 14px;
+  width: 300px;
+  position: absolute;
+  margin-top: -5px;
+  margin-left: 40px;
+  outline:none; /*Esta linha serve para tirar a borda padrão do input*/
+}
+
+/*Posicionando o ícone de lupa da busca*/
+#searchButton {
+  position: absolute;
+  margin: 0px 325px;
+}
+
+/*Posicionando o ícone de "Perfil"*/
+#userIcon {
+  position: absolute;
+  margin: 0px 410px;
+}
+
+/*Posicionando e estelizando o link do "Minha conta"*/
+#myAccount {
+  position: absolute;
+  margin: 0px 440px;
+  text-decoration: none;/*Tira o sublinhado do link*/
+  color:#333333;
+  font-size: 13px;
+}
+
+/*Posicionando o ícone do carrinho*/
+#minicartIcon {
+  position: absolute;
+  margin: -5px 570px;
+}
+
+/*SLIDER-- INÍCIO*/
+/*Posição e largura do container-pai do slider*/
+.slideshow-container {
+  width: 100vw;
+  position: absolute;
+  margin: 6% 0%;
+}
+
+/*Estilização dos botões de "voltar" e "ir" do slider*/
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+  
+/*Posicionamento do botão "próximo" à direita*/
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+  
+/*Hover dos botões "ir" e "voltar", é adicionado um fundo preto com transparência*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+  
+/*Estilização dos textos que sobrepõem o slider*/
+
+.sliderPhrase1 {
+  color: #fff;
+  font-weight: bold;
+  font-size: 25px;
+  margin: -210px 205px;
+  position: absolute;
+}
+
+.sliderPhrase2 {
+  color: #E9BF33;
+  font-weight: bold;
+  font-size: 35px;
+  margin: -140px 205px;
+  position: absolute;
+}
+
+#specific-phrase{
+    margin-top: -180px;
+}
+   
+/*Estilização das "bolinhas" de navegação do slider*/
+/*Posicionamento do container*/
+#slidersDots{
+  text-align: center;
+  position: relative;
+  margin-top: 25%;
+}
+
+/*Cor normal/interagindo, espaçamento, tamanho*/
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #BDBDBD;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+  background-color: #f8475f;
+}
+  
+/*Animação "Fade" na passagem de slide*/
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+  
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+  
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
