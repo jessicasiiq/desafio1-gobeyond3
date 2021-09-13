@@ -129,7 +129,7 @@
 /*SLIDER-- INÍCIO*/
 /*Posição e largura do container-pai do slider*/
 .slideshow-container {
-  width: 100vw;
+  width: 99vw;
   position: absolute;
   margin: 6% 0%;
 }
@@ -257,6 +257,7 @@
   position: absolute;
 }
 
+/*Espaçamento entre cards*/
 #container2 {
   margin-left: 240px;
   position: absolute;
@@ -277,6 +278,7 @@
   position: absolute;
 }
 
+/*Posicionamento setas slider*/
 #leftArrow {
   position: absolute;
   margin: -500px -50px;
@@ -469,4 +471,27 @@ footer .column-contact input{
 #creditIcon {
   position: absolute;
   margin: -70px 20px;
+}
+
+/*TENTATIVA DE RESPONSIVIDADE*/
+@media (max-width:899px){
+  header {
+    min-width: 100vw;
+    min-height: 15vh;
+  }
+  #banner-site {
+    position: absolute;
+    display: block; 
+    margin-left: 40px;
+    margin-top: 15px;
+  }
+  #searchInput {
+    margin-left: -300px;
+    margin-top: 15px;
+    width: 40%;
+  }
+  .slideshow-container {
+    margin-top: 10vh;
+    min-height: 190px !important; 
+  }
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <!--Apresentação de caracteres especiais do idioma-->
     <meta charset="UTF-8">
@@ -106,123 +105,125 @@
             <span class="dot" onclick="currentSlide(4)"></span>
         </div>
     </section>
-</body>
 
-<!--Incluindo o Javascript ao HTML, optei por deixá-lo aqui assim garantimos que todo o corpo do HTML carregará antes dele ser chamado-->
-<script type="text/javascript" src="js/script.js"></script>
+    <!--Section de lista de produtos-->
+    <section class="list-products">
+        <h2>Mais vendidos</h2>
+        <span>—</span>
+        <!--Como a intenção do projeto era demonstrar os conhecimentos em HTML e CSS decidi não utilizar ferramentas externas (ex.: libs) para montar o carrossel, até porquê a ideia do desafio era apenas fazer a estilização e não atentar-se à funcionalidade-->
+        <div class="container-products">
+            <div class="container-element" id="container1">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+            <div class="container-element" id="container2">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+            <div class="container-element" id="container3">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+            <div class="container-element" id="container4">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+            <div class="container-element" id="container5">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+            <div class="container-element" id="container6">
+                <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto" />
+                <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto" />
+                <p id="productName">Sapato floater preto</p>
+                <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto" />
+                <p id="originalPrice">de R$299,00</p>
+                <p id="currentPrice">por R$ 259,90</p>
+                <p id="payment">ou em 9x de R$ 28,87</p>
+                <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp" />
+                <input type="submit" class="product-menu" value="Comprar">
+            </div>
+        </div>
+        <img src="assets/image/product-list/left-arrow.png" id="leftArrow" alt="Seta esquerda" />
+        <img src="assets/image/product-list/right-arrow.png" id="rightArrow" alt="Seta direita" />
+    </section>
 
-<section class="list-products">
-    <h2>Mais vendidos</h2>
-    <span>—</span>
-
-    <div class="container-products">
-        <div class="container-element" id="container1">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-        <div class="container-element" id="container2">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-        <div class="container-element" id="container3">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-        <div class="container-element" id="container4">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-        <div class="container-element" id="container5">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-        <div class="container-element" id="container6">
-            <img src="assets/image/product-list/image.png" id="productImage" alt="Imagem do produto"/>
-            <img src="assets/image/product-list/flag.png" id="flagImage" alt="Flag produto"/>
-            <p id="productName">Sapato floater preto</p>
-            <img src="assets/image/product-list/ranking.png" id="rankingImage" alt="Avaliação do produto"/>
-            <p id="originalPrice">de R$299,00</p>
-            <p id="currentPrice">por R$ 259,90</p>
-            <p id="payment">ou em 9x de R$ 28,87</p>
-            <img src="assets/image/product-list/whatsapp.png" id="whatsappImage" alt="Comprar via whatsapp"/>
-            <input type="submit" class="product-menu" value="Comprar">
-        </div>
-    </div>
-    <img src="assets/image/product-list/left-arrow.png" id="leftArrow" alt="Seta esquerda"/>
-    <img src="assets/image/product-list/right-arrow.png" id="rightArrow" alt="Seta direita"/>
-</section>
-
-<!--Section da newsletter-->
-<section class="newsletter-container">
-    <!--Utilizei um <p> para colocar o "título" da newsletter-->
-    <p id="title-newsletter">Participe de nossas news com promoções e novidades!</p>
-    <!--Criei um container apenas para o card da newsletter, assim consegui mais facilmente posicionar os inputs e botão-->
-    <div class="card-container">
-        <!--Uma newsletter é um formulário(form)-->
+    <!--Section da newsletter-->
+    <section class="newsletter-container">
+        <!--Utilizei um <p> para colocar o "título" da newsletter-->
+        <p id="title-newsletter">Participe de nossas news com promoções e novidades!</p>
+        <!--Criei um container apenas para o card da newsletter, assim consegui mais facilmente posicionar os inputs e botão-->
+        <div class="card-container">
+            <!--Uma newsletter é um formulário(form)-->
             <form id="newsletter-form">
                 <!--Coloquei "required" como atributo de cada input pois isso obriga com que o campo seja preenchido para ocorrer o evento-->
-                <input type="text" class="newsletter-input" placeholder="Digite seu nome" id="name" autocomplete="off" required>
-                <input type="text" class="newsletter-input" placeholder="Digite seu email" id="email" autocomplete="off" required>
+                <input type="text" class="newsletter-input" placeholder="Digite seu nome" id="name" autocomplete="off"
+                    required>
+                <input type="text" class="newsletter-input" placeholder="Digite seu email" id="email" autocomplete="off"
+                    required>
                 <input type="submit" class="newsletter-menu" value="Eu quero!">
             </form>
-    </div>
-</section>
+        </div>
+    </section>
 
-<!--Rodapé da página-->
-<footer>
-    <div class="container">
+    <!--Rodapé da página-->
+    <footer>
+        <!--O rodapé foi dividido em três blocos de colunas-->
+        <div class="container">
             <div class="column-local">
                 <h2>Localização</h2>
                 <span>—</span>
                 <p>Avenida Andrômeda, 2000. Bloco 6 e 8<br>Alphavile SP<br>
-                brasil@corebiz.ag<br>+55 11 3090 1039</p>
+                    brasil@corebiz.ag<br>+55 11 3090 1039</p>
             </div>
             <div class="column-contact">
-                <!--ícone ilustrando um carrinho de compra-->
-                <img src="assets/image/footer/message.png" id="messageIcon" alt="Envelope de mensagem"/>
+                <img src="assets/image/footer/message.png" id="messageIcon" alt="Envelope de mensagem" />
                 <input type="submit" class="footer-menu" value="Entre em contato">
-                <img src="assets/image/footer/contact.png" id="contactIcon" alt="Contato"/>
+                <img src="assets/image/footer/contact.png" id="contactIcon" alt="Contato" />
                 <input type="submit" class="footer-menu" value="Fale com o nosso consultor online">
             </div>
             <div class="column-credit">
-                <img src="assets/image/footer/credit.png" id="creditIcon" alt="Produção do site feita pela Corebiz utilizando VTEX IO"/>
+                <img src="assets/image/footer/credit.png" id="creditIcon"
+                    alt="Produção do site feita pela Corebiz utilizando VTEX IO" />
             </div>
-    </div>
-</footer>
-
+        </div>
+    </footer>
+</body>
+<!--Incluindo o Javascript ao HTML. Optei por deixá-lo aqui assim garantimos que todo o corpo do HTML carregará antes dele ser chamado-->
+<script type="text/javascript" src="js/script.js"></script>
 </html>
