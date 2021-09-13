@@ -4,6 +4,11 @@
   src: url(../assets/fonts/Nunito-Regular.ttf);
  }
 
+ @font-face {
+  font-family: Nunito-Black;
+  src: url(../assets/fonts/Nunito-Black.ttf);
+ }
+
 /*Escolhi zerar o margin e padding de toda a página, bem como adicionar à ela a fonte personalizada Nunito que eu instalei logo acima*/
 *{
   margin: 0px;
@@ -167,9 +172,10 @@
 }
 
 .sliderPhrase2 {
+  font-family: Nunito-Black;
   color: #E9BF33;
   font-weight: bold;
-  font-size: 35px;
+  font-size: 33px;
   margin: -140px 205px;
   position: absolute;
 }
@@ -220,11 +226,133 @@
   to {opacity: 1}
 }
 
+/*Estilização do slider de produtos*/
+.list-products {
+  padding-top: 35px;
+  padding-left: 100px;
+  height: 450px;
+}
+
+.list-products h2 {
+  font-family: Nunito-Black;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.container-products {
+  width: 80%;
+  height: 100vh;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.container-element {
+  width: 216px;
+  height: 365px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 7px;
+  margin-top: -240px;
+  position: absolute;
+}
+
+#container2 {
+  margin-left: 240px;
+  position: absolute;
+}
+
+#container3 {
+  margin-left: 480px;
+  position: absolute;
+}
+
+#container4 {
+  margin-left: 720px;
+  position: absolute;
+}
+
+#container5 {
+  margin-left: 960px;
+  position: absolute;
+}
+
+#leftArrow {
+  position: absolute;
+  margin: -500px -50px;
+}
+
+#rightArrow {
+  position: absolute;
+  margin: -500px 1200px;
+}
+
+#flagImage {
+  position: absolute;
+  margin: 0px -80px;
+}
+
+#productName {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+#rankingImage {
+  position: absolute;
+  margin: 5px 75px;
+}
+
+#originalPrice, #payment {
+  position: absolute;
+  margin: 25px 75px;
+  font-size: 12px;
+  color: #7A7A7A;
+  width: 100vh;
+}
+
+#payment {
+  margin: 70px 50px;
+}
+
+#currentPrice {
+  position: absolute;
+  margin: 45px 50px;
+  font-weight: bold;
+  font-size: 18px;
+  color: #000;
+  width: 100vh;
+}
+
+#whatsappImage {
+  position: absolute;
+  margin: 100px 65px;
+}
+
+.product-menu {
+  background:#00E676; 
+  border: 0px;  
+  height: 32px;
+  outline: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Nunito-Black;
+  padding-left: 15px;
+  font-size: 12px;
+  width: 140px;
+  border-radius: 7px;
+  margin: 91px 40px;
+}
+
+/*Estilização newsletter section*/
+/*Tamanho e fundo da section*/
 .newsletter-container {
   min-height: 170px;
   background-color: #F2F2F2;
 }
 
+/*Título do newsletter*/
 #title-newsletter {
   padding-top: 30px;
   text-align: center;
@@ -232,10 +360,12 @@
   font-size: 22px;
 }
 
+/*Container dos inputs e botão do form*/
 .card-container {
   margin-left: 320px;
 }
 
+/*Estilização do input do newsletter*/
 .newsletter-input {
   height: 48px;
   width: 280px;
@@ -248,6 +378,7 @@
   outline: none;
 }
 
+/*Estilização do botão do form*/
 .newsletter-menu{
   background:#E9BF33; 
   border: 0px;  
@@ -257,4 +388,85 @@
   font-size: 16px;
   width: 140px;
   border-radius: 7px;
+}
+
+/*Estilização do footer*/
+footer{
+  height: 200px;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+  padding: 30px;
+}
+
+/*Estilização da primeira coluna → "Localização"*/
+.column-local {
+  width: 40%;
+  margin-left: 70px;
+}
+
+footer .column-local h2{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+footer .column-local span, .list-products span{
+  font-size: 50px;
+  font-weight: bold;
+  color: #E9BF33;
+  margin-top: -20px;
+  position: absolute;
+}
+
+.list-products span{
+  margin-top: -35px;
+}
+
+footer .column-local p{
+  margin: 40px 0;
+  position: absolute;
+  line-height: 30px;
+}
+
+/*Estilização da segunda coluna → "Contato"*/
+.column-contact {
+  width: 40%;
+  margin-left: 550px;
+  flex-direction: column;
+  display:flex;
+}
+
+footer .column-contact input{
+  background:#E9BF33; 
+  border: 0px;  
+  height: 45px;
+  outline: none;
+  color: #fff;
+  font-size: 12px;
+  width: 195px;
+  border-radius: 7px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  padding-left: 20px;
+  white-space: normal;/*Evita o texto do botão "vazar", assim, se for necessário, ele quebra a linha de texto*/
+}
+
+#messageIcon {
+  position: absolute;
+  margin: 35px 20px;
+}
+
+#contactIcon {
+  position: absolute;
+  margin: 98px 20px;
+}
+
+.column-credit{
+  width: 20%;
+  margin-left: 1000px;
+}
+
+#creditIcon {
+  position: absolute;
+  margin: -70px 20px;
 }
