@@ -1,4 +1,4 @@
-# **Atividade #1** ***Go Beyond 3 (Corebiz) *** **•** Front-end → Recriar *HTML/CSS* de uma página *web* 📚🚀✨
+# **Atividade #1**  **Go Beyond 3 (Corebiz) ** **•** ***Front-end →*** Recriar *HTML/CSS* de uma página *web* 📚🚀✨
 
 Desenvolvimento da primeira atividade *front-end web* proposta para o intensivo ***Go Beyond 3*** da ***Corebiz*** ➡️ recriação de uma página *web* proposta no ***Figma*** utilizando *HTML* e *CSS* (*Javascript* foi utilizado para o *slider* principal).
 
